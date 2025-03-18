@@ -198,7 +198,8 @@ function Index() {
                                 <div className="sm:w-1/3">
                                     <div className="relative pb-[100%] sm:pb-[130%]">
                                         <img
-                                            src="../src/assets/itsme.jpg"
+                                            // src="../src/assets/itsme.jpg"
+                                            src="https://res.cloudinary.com/dhd3ofr7h/image/upload/v1742317414/itsme_v1bawi.jpg"
                                             alt="CEO"
                                             className="absolute inset-0 w-full h-full object-cover"
                                         />
@@ -229,7 +230,8 @@ function Index() {
                                 <div className="sm:w-1/3">
                                     <div className="relative pb-[100%] sm:pb-[130%]">
                                         <img
-                                            src="../src/assets/A portrait image of a man wearing formals, with short hair, not wearing glasses or spectacles, .jpeg"
+                                            src="https://res.cloudinary.com/dhd3ofr7h/image/upload/v1742317430/A_portrait_image_of_a_man_wearing_formals_with_short_hair_not_wearing_glasses_or_spectacles_f7vga9.jpg"
+                                            // src="../src/assets/A portrait image of a man wearing formals, with short hair, not wearing glasses or spectacles, .jpeg"
                                             alt="Master Baker"
                                             className="absolute inset-0 w-full h-full object-cover"
                                         />
