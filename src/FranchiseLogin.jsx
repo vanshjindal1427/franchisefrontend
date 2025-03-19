@@ -23,7 +23,7 @@ function FranchiseLogin() {
         setError('');
         // try {
             
-        //     let url = 'http://franchisebackend-production-a6c5.up.railway.app/franchise/franchiselogin';
+        //     let url = 'https://franchisebackend-production-a6c5.up.railway.app/franchise/franchiselogin';
         //     const response = await axios.post(url, credentials, {
         //         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
         //     });
@@ -45,7 +45,7 @@ function FranchiseLogin() {
         try {
             // Check if trying to login as admin
             if (credentials.emailid === "admin@sstbathinda.com") {
-                const response = await axios.post('http://franchisebackend-production-a6c5.up.railway.app/admin/login', credentials, {
+                const response = await axios.post('https://franchisebackend-production-a6c5.up.railway.app/admin/login', credentials, {
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
                 });
 
@@ -62,7 +62,7 @@ function FranchiseLogin() {
 
             console.log('Attempting to login as franchise', credentials);
             // If not admin or admin login failed, try franchise login
-            const response = await axios.post('http://franchisebackend-production-a6c5.up.railway.app/franchise/franchiselogin', credentials, {
+            const response = await axios.post('https://franchisebackend-production-a6c5.up.railway.app/franchise/franchiselogin', credentials, {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
             });
 

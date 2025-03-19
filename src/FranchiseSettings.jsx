@@ -52,7 +52,7 @@ function FranchiseSettings() {
 
         try {
             const franchiseInfo = JSON.parse(localStorage.getItem('franchiseInfo'));
-            var url = 'http://franchisebackend-production-a6c5.up.railway.app/franchise/updatePassword';
+            var url = 'https://franchisebackend-production-a6c5.up.railway.app/franchise/updatePassword';
             const response = await axios.post(url, {
                 emailid: franchiseInfo.emailid,
                 currentPassword : formData.currentPassword,

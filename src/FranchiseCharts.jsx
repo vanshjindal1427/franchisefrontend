@@ -26,7 +26,7 @@ function FranchiseCharts() {
     setLoading(true);
     setError('');
     try {
-      const url = new URL('http://franchisebackend-production-a6c5.up.railway.app/franchise/salesHistory');
+      const url = new URL('https://franchisebackend-production-a6c5.up.railway.app/franchise/salesHistory');
       url.search = new URLSearchParams({
         emailid: franchiseInfo.emailid,
         fromDate: dateFilter.fromDate,
