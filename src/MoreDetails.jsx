@@ -22,14 +22,14 @@ function MoreDetails() {
     const [darkMode] = useState(false); // Add darkMode state
     const [isChecked] = useState(false); // Add 
     // async function fetchDetails() {
-    //     let url = "http://localhost:2007/admin/moreDetails"
+    //     let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/moreDetails"
     //     let result = await axios.post(url, { emailid: params.emailid }, { headers: { "Content-Type": "application/x-www-form-urlencoded" }, });
     //     setObj(result.data.document);
     // }
     async function fetchDetails() {
         try {
             setLoading(true);
-            let url = "http://localhost:2007/admin/moreDetails"
+            let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/moreDetails"
             let result = await axios.post(url, { emailid: params.emailid },
                 {
                     headers: { "Content-Type": "application/x-www-form-urlencoded" }
@@ -51,7 +51,7 @@ function MoreDetails() {
     async function handleApprove(email) {
         // alert(email);
         let obj = { emailid: email };
-        let url = "http://localhost:2007/admin/approveApplication";
+        let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/approveApplication";
         let resp = await axios.post(url, obj, {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         });
@@ -62,7 +62,7 @@ function MoreDetails() {
     async function handleDecline(email) {
         // alert(email);
         let obj = { emailid: email };
-        let url = "http://localhost:2007/admin/declineApplication";
+        let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/declineApplication";
         let resp = await axios.post(url, obj, {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         });
@@ -74,7 +74,7 @@ function MoreDetails() {
         alert(email);
         var password = nanoid(10);
         let obj = { emailid: email, password: password };
-        let url = "http://localhost:2007/admin/franchiseApplication";
+        let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/franchiseApplication";
         let resp = await axios.post(url, obj, {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
         });
@@ -91,7 +91,7 @@ function MoreDetails() {
                 
             };
 
-            let url = "http://localhost:2007/admin/franchiseApplication";
+            let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/franchiseApplication";
             let resp = await axios.post(url, obj, {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
             });

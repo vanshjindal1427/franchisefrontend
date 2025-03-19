@@ -30,7 +30,7 @@ const ApplicantsTable = () => {
     setTotalPage(Math.ceil(filterApplications.length / rowsLimit));
   }, [filterApplications]) ;
   async function getApplications() {
-    let url = "http://localhost:2007/admin/showApplications";
+    let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/showApplications";
     var applicationsjson = await axios.get(url);
     if(filter !== "3") {
       setFilterApplications(applicationsjson.data.filter((application) => application.status === parseInt(filter)));
@@ -76,7 +76,7 @@ const ApplicantsTable = () => {
   async function doDecline(email) {
     alert(email);
     let obj = { emailid: email };
-    let url = "http://localhost:2007/admin/declineApplication";
+    let url = "http://franchisebackend-production-a6c5.up.railway.app/admin/declineApplication";
     let resp = await axios.post(url, obj, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     });

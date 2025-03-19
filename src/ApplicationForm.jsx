@@ -42,7 +42,7 @@ function ApplicationForm() {
   async function applyForm(e) {
     e.preventDefault();
 
-    let url = "http://localhost:2007/applicant/saveApplication";
+    let url = "http://franchisebackend-production-a6c5.up.railway.app/applicant/saveApplication";
 
     let fd = new FormData(); // FormData is an inbuilt class in JS
     for (let prop in obj) {

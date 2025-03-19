@@ -24,7 +24,7 @@ function FranchiseSales() {
         var token = localStorage.getItem('token');
         // Add your submit logic here
         try {
-            const url = 'http://localhost:2007/franchise/addSales';
+            const url = 'http://franchisebackend-production-a6c5.up.railway.app/franchise/addSales';
             const response = await axios.post(url, formData, {
                 headers: { "Content-Type": "application/x-www-form-urlencoded", 'authorization': `Bearer ${token}`},  
             });
